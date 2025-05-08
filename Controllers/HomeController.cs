@@ -15,6 +15,10 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Ahorcado.inicializarGrupo();
+        ViewBag.palabra = Ahorcado.palabra;
+        ViewBag.cantIntentos = Ahorcado.cantIntentos;
+        ViewBag.letrasUsadas = Ahorcado.letrasUsadas;
         return View();
     }
 }
