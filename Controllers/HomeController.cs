@@ -21,4 +21,10 @@ public class HomeController : Controller
         ViewBag.letrasUsadas = Ahorcado.letrasUsadas;
         return View();
     }
+
+    public IActionResult jugar(){
+        return View("Ahorcado");
+    }
+
+
 }
